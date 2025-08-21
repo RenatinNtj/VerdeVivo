@@ -1,0 +1,127 @@
+
+/* ====== ROLAGEM SUAVE ====== */
+html {
+    scroll-behavior: smooth;
+    /* Faz a rolagem entre âncoras ser suave */
+}
+
+/* ====== ESTILO GERAL ====== */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* Fonte, remoção de margens/paddings padrão e espaçamento entre linhas */
+}
+
+/* ====== CABEÇALHO FIXO ====== */
+header {
+    background:linear-gradient(to right, rgb(24, 17, 90), rgb(32, 40, 65));
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top:-35px;
+    /* Cabeçalho fixo no topo com fundo escuro */
+}
+
+header h1 {
+    background:rgb(0, 128, 0, 0.5);
+    padding:10px 10px;
+    border-radius:10px;
+    font-size:50px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 3px;
+    /* Remove margem padrão do título */
+}
+
+header h2 {
+    background-color: rgb(0, 128, 0, 0.5);
+    padding:10px 10px;
+    border-radius:10px;
+    margin: 0;
+    font-size:20px;
+    margin-top:-40px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2.5px;
+}
+
+nav {
+    margin-top: 20px;
+    /* Espaço acima do menu */
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background-color: rgb(0, 128, 0, 0.5);
+    /* Estilo dos links do menu */
+}
+
+nav a:hover {
+    background: rgb(0, 128, 0, 0.5);
+    opacity:75%;
+    /* Fundo verde quando o mouse passa em cima */
+}
+
+/* ====== LINK ATIVO NO MENU ====== */
+nav a.active {
+    background: rgb(0, 128, 0, 0.5);
+    font-weight: bold;
+    /* Estilo para indicar o link ativo */
+}
+
+/* ====== AJUSTE DE ESPAÇAMENTO DAS SEÇÕES ====== */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    /* Espaçamento e centralização do conteúdo das seções */
+}
+
+button:hover {
+    background: #ddd;
+    /* Cor muda quando o mouse passa por cima */
+}
+
+.sobre-container {
+    display: flex;
+    flex-wrap: wrap; /* Responsivo: empilha em telas menores */
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.sobre-container p {
+    color: whitesmoke;
+    background-color: rgba(0, 128, 0, 0.8);
+    border-radius: 6px;
+    padding: 15px 20px;
+    font-size: 18px;
+    margin: 0;
+    max-width: 600px;
+}
+
+.sobre-container img {
+    max-width: 300px;
+    border-radius: 8px;
+    height: auto;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+    background:rgb(0, 128, 0, 0.5);
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    margin-top:-25px;
+    /* Rodapé com fundo escuro e texto centralizado */
+}
+
